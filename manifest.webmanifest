@@ -1,0 +1,17 @@
+{
+  "name": "Vendidito",
+  "short_name": "Vendidito",
+  "description": "Genera títulos, descripciones y precios para Vinted y Wallapop. Gratis, sin cuenta y sin enviar tus datos: todo ocurre en tu navegador.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ee",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
