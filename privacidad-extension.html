@@ -79,13 +79,15 @@
         <div><span>Datos enviados</span><strong>0</strong></div>
         <div><span>Telemetría</span><strong>No</strong></div>
       </div>
-      <p class="muted-note">Última actualización: 4 de noviembre de 2026. Versión de la extensión: 1.0.0.</p>
+      <p class="muted-note">Última actualización: 5 de noviembre de 2026. Versión de la extensión: 1.1.0.</p>
       <h2>Qué datos usa</h2>
       <p>La extensión usa los datos que escribes en su panel (categoría, artículo, marca, modelo, talla, color, estado, plataforma, objetivo, zona, defectos, extras y precios comparables) y los campos visibles del formulario de publicación que tienes abierto (título, descripción, precio, marca, talla, color y estado).</p>
-      <p>No lee tu historial, tus contraseñas, tus mensajes, tus cookies de sesión ni otras pestañas. Solo se ejecuta en Vinted y Wallapop.</p>
+      <p>Si usas la pestaña Responder, también procesa el texto del comprador que pegas voluntariamente y tu precio mínimo. Ese texto se usa solo para preparar las respuestas y no se guarda.</p>
+      <p>No lee tu historial, tus contraseñas, tus conversaciones del chat, tus cookies de sesión ni otras pestañas. Solo se ejecuta en Vinted y Wallapop.</p>
       <h2>Para qué se usan</h2>
       <ul>
         <li>Generar el título, la descripción, el precio y los hashtags con plantillas locales.</li>
+        <li>Preparar respuestas para el mensaje que pegas y copiarlo cuando tú lo pides.</li>
         <li>Detectar si hay un formulario de anuncio abierto.</li>
         <li>Rellenar ese formulario cuando pulsas “Rellenar en la página”.</li>
         <li>Guardar tu borrador y tus preferencias en tu navegador.</li>
@@ -95,6 +97,7 @@
         <thead><tr><th>Dato</th><th>Dónde va</th><th>Cuánto dura</th></tr></thead>
         <tbody>
           <tr><td>Texto del anuncio</td><td>Memoria de la página</td><td>Hasta que cierras la pestaña</td></tr>
+          <tr><td>Mensaje del comprador pegado en Responder</td><td>Memoria de la página</td><td>Hasta que cierras la pestaña; no se guarda</td></tr>
           <tr><td>Ajustes y borrador</td><td><code>chrome.storage.local</code></td><td>Hasta que los borras o desinstalas</td></tr>
           <tr><td>Respaldo del borrador</td><td><code>localStorage</code></td><td>Hasta que lo borras</td></tr>
           <tr><td>Datos enviados a un servidor</td><td>Ninguno</td><td>—</td></tr>
@@ -109,7 +112,7 @@
       </ul>
       <p>No se piden permisos de historial, pestañas, cookies, portapapeles en segundo plano ni acceso a todos los sitios.</p>
       <h2>Qué no hace</h2>
-      <p>No publica anuncios por ti, no envía mensajes, no modifica anuncios ya publicados y no comparte datos con terceros. Cuando publicas, eres tú quien decide enviar el anuncio a la plataforma; a partir de ahí se aplican sus políticas.</p>
+      <p>No publica anuncios por ti, no envía mensajes (solo prepara respuestas para que las copies), no modifica anuncios ya publicados y no comparte datos con terceros. Cuando publicas, eres tú quien decide enviar el anuncio a la plataforma; a partir de ahí se aplican sus políticas.</p>
       <h2>Borrar tus datos</h2>
       <p>Puedes borrar el borrador desde el panel o desinstalar la extensión. Al desinstalarla se eliminan sus datos locales. Si compartes el ordenador, usa un perfil de navegador separado o borra los datos al terminar.</p>
       <h2>Menores</h2>
@@ -138,7 +141,7 @@
           <a href="index.html#generador">Generador de anuncios</a>
           <a href="precios.html">Calculadora de precio</a>
           <a href="generador-de-descripciones-para-vinted.html">Descripciones para Vinted</a>
-          <a href="https://github.com/storbaz/vendidito/releases/tag/v1.0.0">Extensión para el navegador</a>
+          <a href="https://github.com/storbaz/vendidito/releases/tag/v1.1.0">Extensión para el navegador</a>
           <a href="como-funciona.html">Cómo funciona</a>
         </div>
         <div>
