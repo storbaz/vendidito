@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacidad de la extensión — Vendidito</title>
-<meta name="description" content="Qué datos usa la extensión Vendidito, dónde se guardan y por qué no sale nada del navegador. Sin cuenta, sin servidor y sin telemetría.">
+<meta name="description" content="Qué datos usa la extensión Vendidito, dónde se guardan y por qué tu anuncio no sale del navegador. Sin cuenta y sin telemetría.">
 <link rel="canonical" href="https://storbaz.github.io/vendidito/privacidad-extension.html">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#0b1220">
@@ -12,12 +12,12 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Vendidito">
 <meta property="og:title" content="Privacidad de la extensión — Vendidito">
-<meta property="og:description" content="Qué datos usa la extensión Vendidito, dónde se guardan y por qué no sale nada del navegador. Sin cuenta, sin servidor y sin telemetría.">
+<meta property="og:description" content="Qué datos usa la extensión Vendidito, dónde se guardan y por qué tu anuncio no sale del navegador. Sin cuenta y sin telemetría.">
 <meta property="og:url" content="https://storbaz.github.io/vendidito/privacidad-extension.html">
 <meta property="og:image" content="https://storbaz.github.io/vendidito/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacidad de la extensión — Vendidito">
-<meta name="twitter:description" content="Qué datos usa la extensión Vendidito, dónde se guardan y por qué no sale nada del navegador. Sin cuenta, sin servidor y sin telemetría.">
+<meta name="twitter:description" content="Qué datos usa la extensión Vendidito, dónde se guardan y por qué tu anuncio no sale del navegador. Sin cuenta y sin telemetría.">
 <meta name="twitter:image" content="https://storbaz.github.io/vendidito/assets/og.png">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon.svg">
@@ -45,7 +45,7 @@
       <div class="hero-copy">
         <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 7.6 7.5 9.5 4.4-1.9 7.5-5.1 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg> Privado por diseño · Sin cuenta</span>
         <h1>La extensión, sin letra pequeña</h1>
-        <p class="lede">Vendidito funciona dentro de tu navegador. No hay cuenta, no hay servidor y tu anuncio no se envía a ninguna API. Esta página explica exactamente qué toca y qué no.</p>
+        <p class="lede">Vendidito funciona dentro de tu navegador. No hay cuenta, no hay servidor propio y tu anuncio no se envía a ninguna API. Solo la clave de Pro se comprueba con Lemon Squeezy al activarla. Esta página explica exactamente qué toca y qué no.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#generador">Generar mi anuncio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
           <a class="button button-ghost" href="como-funciona.html">Ver cómo funciona</a>
@@ -75,11 +75,11 @@
   <section class="section"><div class="wrap prose privacy-prose" id="datos">
       <div class="privacy-summary">
         <div><span>Cuenta</span><strong>No</strong></div>
-        <div><span>Servidor</span><strong>No</strong></div>
-        <div><span>Datos enviados</span><strong>0</strong></div>
+        <div><span>Servidor propio</span><strong>No</strong></div>
+        <div><span>Anuncios enviados</span><strong>0</strong></div>
         <div><span>Telemetría</span><strong>No</strong></div>
       </div>
-      <p class="muted-note">Última actualización: 5 de noviembre de 2026. Versión de la extensión: 1.1.0.</p>
+      <p class="muted-note">Última actualización: 6 de noviembre de 2026. Versión de la extensión: 1.2.0.</p>
       <h2>Qué datos usa</h2>
       <p>La extensión usa los datos que escribes en su panel (categoría, artículo, marca, modelo, talla, color, estado, plataforma, objetivo, zona, defectos, extras y precios comparables) y los campos visibles del formulario de publicación que tienes abierto (título, descripción, precio, marca, talla, color y estado).</p>
       <p>Si usas la pestaña Responder, también procesa el texto del comprador que pegas voluntariamente y tu precio mínimo. Ese texto se usa solo para preparar las respuestas y no se guarda.</p>
@@ -100,19 +100,24 @@
           <tr><td>Mensaje del comprador pegado en Responder</td><td>Memoria de la página</td><td>Hasta que cierras la pestaña; no se guarda</td></tr>
           <tr><td>Ajustes y borrador</td><td><code>chrome.storage.local</code></td><td>Hasta que los borras o desinstalas</td></tr>
           <tr><td>Respaldo del borrador</td><td><code>localStorage</code></td><td>Hasta que lo borras</td></tr>
-          <tr><td>Datos enviados a un servidor</td><td>Ninguno</td><td>—</td></tr>
+          <tr><td>Clave de licencia Pro</td><td><code>chrome.storage.local</code></td><td>Hasta que la desactivas o desinstalas</td></tr>
+          <tr><td>Clave enviada a Lemon Squeezy</td><td>API de Lemon Squeezy (solo al activar y al revisar)</td><td>La gestiona Lemon Squeezy según su política</td></tr>
         </tbody>
       </table>
+      <h2>Vendidito Pro y tu clave</h2>
+      <p>La versión gratuita no envía nada. Si compras Vendidito Pro, al pegar la clave en la pestaña Pro la extensión la envía una vez a la API de Lemon Squeezy para comprobarla, junto con un nombre de dispositivo («Vendidito · Windows», por ejemplo). No se envía el anuncio, ni el mensaje del comprador, ni tu email.</p>
+      <p>Después de activarla, la clave se guarda en tu navegador y la extensión vuelve a comprobarla cada 7 días si hay conexión. Sin conexión sigue funcionando con la última comprobación. Puedes liberar la activación desde el botón «Desactivar en este navegador». El pago y la factura los gestiona Lemon Squeezy; puedes leer su política en <a href="https://www.lemonsqueezy.com/privacy">lemonsqueezy.com/privacy</a>.</p>
       <h2>Qué sale de tu navegador</h2>
-      <p>Nada. La extensión no hace peticiones de red, no incluye analítica, no muestra anuncios y no llama a APIs de inteligencia artificial. Todo el código va dentro del paquete y no se descarga código remoto.</p>
+      <p>El texto de tus anuncios y mensajes no sale nunca. La extensión no incluye analítica, no muestra anuncios y no llama a APIs de inteligencia artificial. Todo el código va dentro del paquete y no se descarga código remoto. La única petición de red es la comprobación de la clave de Pro contra Lemon Squeezy.</p>
       <h2>Permisos y por qué</h2>
       <ul>
-        <li><strong>Almacenamiento:</strong> guardar tus ajustes y el borrador en tu navegador.</li>
+        <li><strong>Almacenamiento:</strong> guardar tus ajustes, el borrador y la licencia en tu navegador.</li>
         <li><strong>Vinted y Wallapop:</strong> mostrar el panel, detectar el formulario y rellenarlo solo en esas webs.</li>
+        <li><strong>Lemon Squeezy:</strong> comprobar la clave de Pro. No se usa para nada más.</li>
       </ul>
       <p>No se piden permisos de historial, pestañas, cookies, portapapeles en segundo plano ni acceso a todos los sitios.</p>
       <h2>Qué no hace</h2>
-      <p>No publica anuncios por ti, no envía mensajes (solo prepara respuestas para que las copies), no modifica anuncios ya publicados y no comparte datos con terceros. Cuando publicas, eres tú quien decide enviar el anuncio a la plataforma; a partir de ahí se aplican sus políticas.</p>
+      <p>No publica anuncios por ti, no envía mensajes (solo prepara respuestas para que las copies), no modifica anuncios ya publicados y no comparte tus anuncios ni mensajes con terceros. La única excepción es la clave de Pro, que se comprueba con Lemon Squeezy. Cuando publicas, eres tú quien decide enviar el anuncio a la plataforma; a partir de ahí se aplican sus políticas.</p>
       <h2>Borrar tus datos</h2>
       <p>Puedes borrar el borrador desde el panel o desinstalar la extensión. Al desinstalarla se eliminan sus datos locales. Si compartes el ordenador, usa un perfil de navegador separado o borra los datos al terminar.</p>
       <h2>Menores</h2>
