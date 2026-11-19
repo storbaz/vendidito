@@ -366,6 +366,8 @@ input::placeholder, textarea::placeholder { color: color-mix(in srgb, var(--mute
 .inline-cta strong { display: block; font-size: .95rem; }
 .inline-cta p { margin: .2rem 0 0; font-size: .84rem; }
 .inline-cta .button { flex: none; font-size: .82rem; }
+.store-row { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+.store-row .button { font-size: .82rem; }
 
 /* ---------- Price page ---------- */
 
